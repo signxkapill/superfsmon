@@ -252,7 +252,7 @@ def main():
     signal.signal(signal.SIGTERM, handle_term)
 
     while observer.is_alive():
-        observer.join(1)
+        observer.join(3)
 
 if __name__ == '__main__':
     main()
